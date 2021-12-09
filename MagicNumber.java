@@ -27,6 +27,8 @@ final class MagicNumber {
     public static final int NINE = 9;
     /** The maximum number for magicNumbers. */
     public static final int MAGICNUM = 15;
+    /** The space. */
+    public static final String SPACE = " ";
 
     /**
     * Prevent instantiation.
@@ -107,9 +109,9 @@ final class MagicNumber {
         for (int count = 0; count < outputSquare.length; count++) {
             if (count == THREE || count == SIX) {
                 System.out.println();
-                System.out.print(outputSquare[count] + " ");
+                System.out.print(outputSquare[count] + SPACE);
             } else {
-                System.out.print(outputSquare[count] + "  ");
+                System.out.print(outputSquare[count] + SPACE);
             }
         }
         System.out.println("\n***** ");
